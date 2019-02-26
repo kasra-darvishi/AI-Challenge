@@ -63,6 +63,7 @@ public class AI
             updateEnemyCoolDowns(world);
             shouldUpdateCoolDowns = false;
         }
+        updateEnemyAP(world);
 
 //        logger.debug("\nmy heroes:");
 //        for (Hero hero: world.getMyHeroes()){
@@ -147,17 +148,58 @@ public class AI
 //        }
 
         getAllPossibleActions(allPossibleAbilityOrders_enemy, enemyHeroes, 0, enemy_AP, true, abilities, enemy_AP);
+//        int i = 1;
+//        for (Pair<Hero, Ability>[] pairs: allPossibleAbilityOrders_enemy){
+//            logger.debug("\nset: " + i);
+//            int tmpAP = 0;
+//            for (Pair<Hero, Ability> pair: pairs) {
+//                logger.debug("hero: " + pair.getFirst().getId() + " ability: " + (pair.getSecond() != null ? pair.getSecond().getName() : null));
+//                if (pair.getSecond() != null)
+//                    tmpAP += pair.getSecond().getAPCost();
+//            }
+//            logger.debug("remaining ap: " + (enemy_AP - tmpAP));
+//            i++;
+//        }
+
+        // expected damage dealt to enemy heroes
+        List<java.util.Map<Integer, Double>> ed_toEnemy= new ArrayList<>();
+        totalExpectedDamage(ed_toEnemy, myHeroes, enemyHeroes, allPossibleAbilityOrders);
+        // expected damage dealt to our heroes
+        List<java.util.Map<Integer, Double>> ed_toAlly = new ArrayList<>();
+        totalExpectedDamage(ed_toAlly, enemyHeroes, myHeroes, allPossibleAbilityOrders_enemy);
 
         // find best sequence of actions and their best target cells
-        double mostExpectedScore = Double.MIN_VALUE;
+        double maxScore = Double.MIN_VALUE;
+        double minScore = Double.MAX_VALUE;
         Pair<Hero, Pair<Ability, Cell>>[] bestAction = null;
-        for (Pair<Hero, Ability>[] orderedAbilities: allPossibleAbilityOrders) {
-            Pair<Double, Pair<Hero, Pair<Ability, Cell>>[]> tmp = findBestTargetCells(orderedAbilities);
-            double tempScore = tmp.getFirst();
-            if (tempScore > mostExpectedScore) {
-                mostExpectedScore = tempScore;
-                bestAction = tmp.getSecond();
+        int i = 0, j = 0;
+        boolean didItOnce = false;
+        for (Pair<Hero, Ability>[] setOfAllyActions: allPossibleAbilityOrders) {
+            Pair<Hero, Pair<Ability, Cell>>[] allyAction = null;
+            for (Pair<Hero, Ability>[] setOfEnemyActions: allPossibleAbilityOrders_enemy) {
+                // TODO: check the correctness of indexes && if the putAll solves the problem of changing the reference
+                java.util.Map<Integer, Double> estimatedDamageToEnemy = new HashMap<>(ed_toEnemy.get(i));
+                java.util.Map<Integer, Double> estimatedDamageToAlly = new HashMap<>(ed_toAlly.get(j));
+                if (!didItOnce) {
+                    allyAction = getBestTargetCells(setOfAllyActions, estimatedDamageToAlly, enemyHeroes);
+                    didItOnce = true;
+                }
+                Pair<Hero, Pair<Ability, Cell>>[] enemyAction = getBestTargetCells(setOfEnemyActions, estimatedDamageToEnemy, myHeroes);
+                double score = getScore(world, allyAction, estimatedDamageToEnemy, enemyAction, estimatedDamageToAlly);
+                if (score < minScore) {
+                    minScore = score;
+                }
+                j++;
             }
+
+            // assign the worst probable score that can be gained by this set of actions to it self
+            if (minScore > maxScore){
+                bestAction = allyAction;
+                maxScore = minScore;
+            }
+            minScore = Double.MAX_VALUE;
+            didItOnce = false;
+            i++;
         }
 
         // send the actions to server
@@ -171,6 +213,52 @@ public class AI
         logger.debug("elapsed time: " + (t2 - t1));
     }
 
+    private double getScore(World world, Pair<Hero, Pair<Ability, Cell>>[] allyAction, java.util.Map<Integer, Double> estimatedDamageToEnemy, Pair<Hero, Pair<Ability, Cell>>[] enemyAction, java.util.Map<Integer, Double> estimatedDamageToAlly) {
+        return 0;
+    }
+
+    private Pair<Hero, Pair<Ability, Cell>>[] getBestTargetCells(Pair<Hero, Ability>[] setOfActions, java.util.Map<Integer, Double> estimatedDamageToUs, Hero[] targetHeroes) {
+        return new Pair[0];
+    }
+
+    /**
+     * find good target cells for abilities and compute the score based on expected damages
+     * and number of heroes in objective zone
+     */
+    private Pair<Double, Pair<Hero, Pair<Ability, Cell>>[]> getBestTargetCellsAndScore(Pair<Hero, Ability>[] setOfAllyActions, java.util.Map<Integer, Double> estimatedDamageToEnemy, Pair<Hero, Ability>[] setOfEnemyActions, java.util.Map<Integer, Double> estimatedDamageToAlly, Hero[] allyHeros, Hero[] enemyHeroes) {
+        return null;
+    }
+
+    private void totalExpectedDamage(List<java.util.Map<Integer,Double>> listOfDamages, Hero[] casters, Hero[] targets, List<Pair<Hero,Ability>[]> setsOfActions) {
+
+        for (Pair<Hero, Ability>[] setOfActions: setsOfActions){
+            Double[] tmpDamage = new Double[targets.length];
+            for (int i = 0; i < targets.length; i++)
+                tmpDamage[i] = 0.0;
+            for (Pair<Hero, Ability> actionPair: setOfActions){
+                if (actionPair.getSecond().getType() == AbilityType.OFFENSIVE){
+                    int i = 0;
+                    for (Double d: expectedDamage(actionPair.getFirst(), targets, actionPair.getSecond())){
+                        tmpDamage[i] += d;
+                        i++;
+                    }
+                }
+            }
+            java.util.Map<Integer, Double> tmpMap = new HashMap<>();
+            int i = 0;
+            for (Hero hero: targets){
+                tmpMap.put(hero.getId(), tmpDamage[i]);
+                i++;
+            }
+            listOfDamages.add(tmpMap);
+        }
+
+    }
+
+    private Hero[] getInRangeHeroes(Hero myHero, AbilityName abilityName, Hero[] enemies){
+        return null;
+    }
+
     /**
      * find all possible set of actions based on coolDowns and remaining action point
      */
@@ -182,9 +270,9 @@ public class AI
             i++;
             if (isEnemyHero) {
                 // check if ability can be cast at this time
-//                logger.debug("ap: " + remainingAP + " index: " + heroIndex + " remCoolDown: " + ability.getRemCooldown() + " AP - cost: " + (remainingAP - ability.getAPCost()) + " i: " + i);
 //                logger.debug(ability.getName() + "\n");
                 int remCoolDown = coolDownMap.get(heroes[heroIndex].getId()).get(ability.getName());
+//                logger.debug("remainingAP: " + remainingAP + " ap cost " + ability.getAPCost() + " remCoolDown: " + remCoolDown + " AP - cost: " + (remainingAP - ability.getAPCost()) + " i: " + i);
                 if (remCoolDown == 0 && (remainingAP - ability.getAPCost()) >= 0) {
                     chosenAbilities[heroIndex] = ability;
                     if (heroIndex == 3) {
@@ -227,19 +315,6 @@ public class AI
     }
 
     /**
-     * check all possible target cells for abilities and compute the score based on expected damages
-     * and number of heroes in objective zone
-     */
-    private Pair<Double, Pair<Hero, Pair<Ability, Cell>>[]> findBestTargetCells(Pair<Hero, Ability>[] orderedAbilities) {
-
-        for (Pair<Hero, Ability> pair: orderedAbilities){
-
-        }
-
-        return null;
-    }
-
-    /**
      * validate the sequence of actions based on remaining action point
      */
     private void makeValid(Pair<Hero, Ability>[] orderedAbilities, int actionPoint) {
@@ -260,6 +335,15 @@ public class AI
         list.add(pairs);
 
         return list;
+    }
+
+    /**
+     * compute the consumed action point by tracking the enemy heroes movement
+     */
+    private void updateEnemyAP(World world) {
+
+
+
     }
 
     private void updateEnemyCoolDowns(World world) {
@@ -297,9 +381,8 @@ public class AI
     /**
      *
      */
-    public double expectedDamage(World world){
-        world.getOppCastAbilities()[0].getAbilityName();
-        return 0.0;
+    public Double[] expectedDamage(Hero caster, Hero[] targets, Ability ability){
+        return new Double[targets.length];
     }
 
     /**
