@@ -161,30 +161,38 @@ public class AI
 //            i++;
 //        }
 
+        logger.debug("number of action sets of ally: " + allPossibleAbilityOrders.size());
+        logger.debug("number of action sets of enemy: " + allPossibleAbilityOrders_enemy.size());
+
         // expected damage dealt to enemy heroes
         List<java.util.Map<Integer, Double>> ed_toEnemy= new ArrayList<>();
         totalExpectedDamage(ed_toEnemy, myHeroes, enemyHeroes, allPossibleAbilityOrders);
-        // expected damage dealt to our heroes
+       // expected damage dealt to our heroes
         List<java.util.Map<Integer, Double>> ed_toAlly = new ArrayList<>();
         totalExpectedDamage(ed_toAlly, enemyHeroes, myHeroes, allPossibleAbilityOrders_enemy);
 
         // find best sequence of actions and their best target cells
         double maxScore = Double.MIN_VALUE;
         double minScore = Double.MAX_VALUE;
-        Pair<Hero, Pair<Ability, Cell>>[] bestAction = null;
+        List<Pair<Hero, Pair<Ability, Cell>>> bestAction = new ArrayList<>();
         int i = 0, j = 0;
-        boolean didItOnce = false;
+
         for (Pair<Hero, Ability>[] setOfAllyActions: allPossibleAbilityOrders) {
-            Pair<Hero, Pair<Ability, Cell>>[] allyAction = null;
+            List<Pair<Hero, Pair<Ability, Cell>>> allyAction = null;
+            boolean didItOnce = false;
             for (Pair<Hero, Ability>[] setOfEnemyActions: allPossibleAbilityOrders_enemy) {
                 // TODO: check the correctness of indexes && if the putAll solves the problem of changing the reference
                 java.util.Map<Integer, Double> estimatedDamageToEnemy = new HashMap<>(ed_toEnemy.get(i));
                 java.util.Map<Integer, Double> estimatedDamageToAlly = new HashMap<>(ed_toAlly.get(j));
                 if (!didItOnce) {
-                    allyAction = getBestTargetCells(setOfAllyActions, estimatedDamageToAlly, enemyHeroes);
+                    allyAction = getBestTargetCells(world, setOfAllyActions, estimatedDamageToAlly, myHeroes, enemyHeroes);
+                    for (Pair<Hero, Pair<Ability, Cell>> pair: allyAction){
+                        logger.debug("\nhero: " + pair.getFirst());
+                        logger.debug("ability: " + pair.getSecond().getFirst().getName() + " row: " + pair.getSecond().getSecond().getRow() + " col: " + pair.getSecond().getSecond().getColumn());
+                    }
                     didItOnce = true;
                 }
-                Pair<Hero, Pair<Ability, Cell>>[] enemyAction = getBestTargetCells(setOfEnemyActions, estimatedDamageToEnemy, myHeroes);
+                List<Pair<Hero, Pair<Ability, Cell>>> enemyAction = getBestTargetCells(world, setOfEnemyActions, estimatedDamageToEnemy, enemyHeroes, myHeroes);
                 double score = getScore(world, allyAction, estimatedDamageToEnemy, enemyAction, estimatedDamageToAlly);
                 if (score < minScore) {
                     minScore = score;
@@ -198,8 +206,8 @@ public class AI
                 maxScore = minScore;
             }
             minScore = Double.MAX_VALUE;
-            didItOnce = false;
             i++;
+            j = 0;
         }
 
         // send the actions to server
@@ -213,12 +221,85 @@ public class AI
         logger.debug("elapsed time: " + (t2 - t1));
     }
 
-    private double getScore(World world, Pair<Hero, Pair<Ability, Cell>>[] allyAction, java.util.Map<Integer, Double> estimatedDamageToEnemy, Pair<Hero, Pair<Ability, Cell>>[] enemyAction, java.util.Map<Integer, Double> estimatedDamageToAlly) {
+    private double getScore(World world, List<Pair<Hero, Pair<Ability, Cell>>> allyAction, java.util.Map<Integer, Double> estimatedDamageToEnemy, List<Pair<Hero, Pair<Ability, Cell>>> enemyAction, java.util.Map<Integer, Double> estimatedDamageToAlly) {
         return 0;
     }
 
-    private Pair<Hero, Pair<Ability, Cell>>[] getBestTargetCells(Pair<Hero, Ability>[] setOfActions, java.util.Map<Integer, Double> estimatedDamageToUs, Hero[] targetHeroes) {
-        return new Pair[0];
+    private List<Pair<Hero, Pair<Ability, Cell>>> getBestTargetCells(World world, Pair<Hero, Ability>[] setOfActions, java.util.Map<Integer, Double> estimatedDamageToUs, Hero[] allyHeroes, Hero[] enemyHeroes) {
+        List<Pair<Hero, Pair<Ability, Cell>>> actionsAndTargets = new ArrayList<>();
+        List<Cell> ignoreForDodging = new ArrayList<>();
+        for (Pair<Hero, Ability> actionPair: setOfActions){
+            if (actionPair.getSecond() == null)
+                continue;
+            AbilityName an = actionPair.getSecond().getName();
+            if (an == AbilityName.BLASTER_ATTACK || an == AbilityName.GUARDIAN_ATTACK || an == AbilityName.HEALER_ATTACK || an == AbilityName.SENTRY_ATTACK){
+                List<Hero> inRangeHeroes = getInRangeHeroes(actionPair.getFirst(), actionPair.getSecond(), enemyHeroes);
+                if (inRangeHeroes.size() != 0) {
+                    Cell targetCell = inRangeHeroes.get(0).getCurrentCell();
+                    Pair<Ability, Cell> pair1 = new Pair<>(actionPair.getSecond(), targetCell);
+                    Pair<Hero, Pair<Ability, Cell>> pair2 = new Pair<>(actionPair.getFirst(), pair1);
+                    actionsAndTargets.add(pair2);
+                }
+            }else if (an == AbilityName.BLASTER_DODGE || an == AbilityName.GUARDIAN_DODGE || an == AbilityName.HEALER_DODGE || an == AbilityName.SENTRY_DODGE){
+                Cell targetCell = whereToDodge(world.getMap(), actionPair.getFirst(), ignoreForDodging, actionPair.getSecond().getRange());
+                if (targetCell != null) {
+                    ignoreForDodging.add(targetCell);
+                    Pair<Ability, Cell> pair1 = new Pair<>(actionPair.getSecond(), targetCell);
+                    Pair<Hero, Pair<Ability, Cell>> pair2 = new Pair<>(actionPair.getFirst(), pair1);
+                    actionsAndTargets.add(pair2);
+                }
+            }else if (an == AbilityName.BLASTER_BOMB){
+                List<Hero> inRangeHeroes = getInRangeHeroes(actionPair.getFirst(), actionPair.getSecond(), enemyHeroes);
+                if (inRangeHeroes.size() != 0) {
+                    Cell targetCell = inRangeHeroes.get(0).getCurrentCell();
+                    Pair<Ability, Cell> pair1 = new Pair<>(actionPair.getSecond(), targetCell);
+                    Pair<Hero, Pair<Ability, Cell>> pair2 = new Pair<>(actionPair.getFirst(), pair1);
+                    actionsAndTargets.add(pair2);
+                }
+            }else if (an == AbilityName.GUARDIAN_FORTIFY){
+                Cell targetCell = whoToFortify(actionPair.getFirst(), allyHeroes, estimatedDamageToUs);
+                Pair<Ability, Cell> pair1 = new Pair<>(actionPair.getSecond(), targetCell);
+                Pair<Hero, Pair<Ability, Cell>> pair2 = new Pair<>(actionPair.getFirst(), pair1);
+                actionsAndTargets.add(pair2);
+            }else if (an == AbilityName.HEALER_HEAL){
+                List<Hero> inRangeHeroes = getInRangeHeroes(actionPair.getFirst(), actionPair.getSecond(), enemyHeroes);
+                if (inRangeHeroes.size() != 0) {
+                    Cell targetCell = inRangeHeroes.get(0).getCurrentCell();
+                    Pair<Ability, Cell> pair1 = new Pair<>(actionPair.getSecond(), targetCell);
+                    Pair<Hero, Pair<Ability, Cell>> pair2 = new Pair<>(actionPair.getFirst(), pair1);
+                    actionsAndTargets.add(pair2);
+                }
+            }else if (an == AbilityName.SENTRY_RAY){
+                List<Hero> inRangeHeroes = getInRangeHeroes(actionPair.getFirst(), actionPair.getSecond(), enemyHeroes);
+                if (inRangeHeroes.size() != 0) {
+                    Cell targetCell = inRangeHeroes.get(0).getCurrentCell();
+                    Pair<Ability, Cell> pair1 = new Pair<>(actionPair.getSecond(), targetCell);
+                    Pair<Hero, Pair<Ability, Cell>> pair2 = new Pair<>(actionPair.getFirst(), pair1);
+                    actionsAndTargets.add(pair2);
+                }
+            }
+
+        }
+
+        return actionsAndTargets;
+    }
+
+    private Cell whoToFortify(Hero caster, Hero[] allyHeroes, java.util.Map<Integer, Double> estimatedDamageToUs) {
+        return null;
+    }
+
+    private Cell whereToDodge(Map map, Hero hero, List<Cell> ignoreForDodging, int range) {
+        for (Cell cell: map.getObjectiveZone()){
+            boolean shouldBeIgnored = false;
+            for (Cell cell2: ignoreForDodging)
+                if (cell2.getRow() == cell.getRow() && cell2.getColumn() == cell.getColumn()) {
+                    shouldBeIgnored = true;
+                    break;
+                }
+            if (!shouldBeIgnored && (Math.abs(hero.getCurrentCell().getRow() - cell.getRow()) + Math.abs(hero.getCurrentCell().getColumn() - cell.getColumn()) < range))
+                return cell;
+        }
+        return null;
     }
 
     /**
@@ -232,11 +313,12 @@ public class AI
     private void totalExpectedDamage(List<java.util.Map<Integer,Double>> listOfDamages, Hero[] casters, Hero[] targets, List<Pair<Hero,Ability>[]> setsOfActions) {
 
         for (Pair<Hero, Ability>[] setOfActions: setsOfActions){
+//            logger.debug("action set #" + (numberOfActionSet+1) + " ----123");
             Double[] tmpDamage = new Double[targets.length];
             for (int i = 0; i < targets.length; i++)
                 tmpDamage[i] = 0.0;
             for (Pair<Hero, Ability> actionPair: setOfActions){
-                if (actionPair.getSecond().getType() == AbilityType.OFFENSIVE){
+                if (actionPair.getSecond() != null && actionPair.getSecond().getType() == AbilityType.OFFENSIVE){
                     int i = 0;
                     for (Double d: expectedDamage(actionPair.getFirst(), targets, actionPair.getSecond())){
                         tmpDamage[i] += d;
@@ -251,12 +333,17 @@ public class AI
                 i++;
             }
             listOfDamages.add(tmpMap);
+//            logger.debug("total damages:");
+//            for (Double d: tmpDamage)
+//                logger.debug(d);
+//
+//            logger.debug("result: ");
+//            for (int id: tmpMap.keySet())
+//                logger.debug("id: " + id + " dmg: " + tmpMap.get(id));
+
         }
 
-    }
 
-    private Hero[] getInRangeHeroes(Hero myHero, AbilityName abilityName, Hero[] enemies){
-        return null;
     }
 
     /**
@@ -273,7 +360,7 @@ public class AI
 //                logger.debug(ability.getName() + "\n");
                 int remCoolDown = coolDownMap.get(heroes[heroIndex].getId()).get(ability.getName());
 //                logger.debug("remainingAP: " + remainingAP + " ap cost " + ability.getAPCost() + " remCoolDown: " + remCoolDown + " AP - cost: " + (remainingAP - ability.getAPCost()) + " i: " + i);
-                if (remCoolDown == 0 && (remainingAP - ability.getAPCost()) >= 0) {
+                if ((remCoolDown == 0 || remCoolDown == -1)&& (remainingAP - ability.getAPCost()) >= 0) {
                     chosenAbilities[heroIndex] = ability;
                     if (heroIndex == 3) {
                         // if one more action could be taken, this set of actions is not good enough and can be ignored
@@ -382,7 +469,51 @@ public class AI
      *
      */
     public Double[] expectedDamage(Hero caster, Hero[] targets, Ability ability){
-        return new Double[targets.length];
+        Double[] expectedDamages = new Double[targets.length];
+
+        /** TODO: if its bomb compute the chance of getting hit then compute the expected damage
+         * and probability of lower hp heroes for getting hit is more than full hp heroes
+         */
+        List<Hero> inRangeHeroes = getInRangeHeroes(caster, ability, targets);
+        double numberOfAffectedHeroes = inRangeHeroes.size();
+        double totalDamageOfAbility = ability.getPower();
+        int i = 0;
+        for (Hero hero: targets){
+            boolean canBeAffected = false;
+            for (Hero affectedHero: inRangeHeroes){
+                if (hero.getId() == affectedHero.getId()){
+                    expectedDamages[i] = totalDamageOfAbility/numberOfAffectedHeroes;
+                    canBeAffected = true;
+                }
+            }
+            if (!canBeAffected)
+                expectedDamages[i] = 0.0;
+            i++;
+        }
+
+//        logger.debug("caster: " + caster.getId() + " ability: " + ability.getName() + " power: " + ability.getPower());
+//        i = 0;
+//        for (Double d: expectedDamages){
+//            logger.debug("affected: " + targets[i] + " expected damage: " + expectedDamages[i]);
+//            i++;
+//        }
+
+        return expectedDamages;
+    }
+
+    private ArrayList<Hero> getInRangeHeroes(Hero myHero, Ability ability, Hero[] enemies){
+        ArrayList<Hero> inRangeHeroes = new ArrayList<Hero>();
+        int row0 = myHero.getCurrentCell().getRow();
+        int col0 = myHero.getCurrentCell().getColumn();
+
+        for (Hero enemy : enemies) {
+            int row = enemy.getCurrentCell().getRow();
+            int col = enemy.getCurrentCell().getRow();
+            double distance = Math.abs(row - row0) + Math.abs(col - col0);
+            if ( row>=0 && col>0 && distance <= ability.getRange() + ability.getAreaOfEffect())        // the ability can hurt this enemy
+                inRangeHeroes.add(enemy);
+        }
+        return inRangeHeroes;
     }
 
     /**
