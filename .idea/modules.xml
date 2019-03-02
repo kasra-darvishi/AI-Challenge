@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AIC19-Client-Java-1.1.1.iml" filepath="$PROJECT_DIR$/AIC19-Client-Java-1.1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AI-Challenge.iml" filepath="$PROJECT_DIR$/AI-Challenge.iml" />
     </modules>
   </component>
 </project>

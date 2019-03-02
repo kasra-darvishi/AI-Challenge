@@ -1,8 +1,6 @@
 package client;
 
 import common.util.Log;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

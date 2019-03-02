@@ -1,0 +1,2687 @@
+
+
+----------------      preProcess      ----------------
+
+
+elapsed time: 158
+
+
+----------------      pickTurn      ----------------
+
+
+elapsed time: 1
+
+
+----------------      pickTurn      ----------------
+
+
+elapsed time: 0
+
+
+----------------      pickTurn      ----------------
+
+
+elapsed time: 0
+
+
+----------------      pickTurn      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 4 phase: 0      ----------------
+
+
+elapsed time: 20
+
+
+----------------      moveTurn: 4 phase: 1      ----------------
+
+
+elapsed time: 15
+
+
+----------------      moveTurn: 4 phase: 2      ----------------
+
+
+elapsed time: 7
+
+
+----------------      moveTurn: 4 phase: 3      ----------------
+
+
+elelapsed time: 1
+
+----------------      moveTurn: 4 phase: 4      ----------------
+
+
+elapsed time: 12
+
+
+----------------      moveTurn: 4 phase: 5      ----------------
+
+
+elapsed time: 23
+
+
+
+
+----------------      actionTurn: 4      ----------------
+
+
+remaining AP of us: 0
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}, {GUARDIAN_DODGE, 0}{GUARDIAN_FORTIFY, 0}, ], currentHP=400, remRespawnTime=0, currentCell={3, 11}, recentPath=[{2, 11}, {3, 11}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={3, 13}, recentPath=[{3, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={3, 16}, recentPath=[{3, 16}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}, {GUARDIAN_DODGE, 0}{GUARDIAN_FORTIFY, 0}, ], currentHP=400, remRespawnTime=0, currentCell={5, 19}, recentPath=[{4, 19}, {5, 19}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 3 col: 11 current HP: 400 max HP: 400
+hero: HEALER id: 3 row: 3 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 3 col: 16 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 5 col: 19 current HP: 400 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 0 row: -1 col: -1 current HP: -1 max HP: 400
+hero: HEALER id: 2 row: -1 col: -1 current HP: -1 max HP: 200
+hero: HEALER id: 4 row: -1 col: -1 current HP: -1 max HP: 200
+hero: GUARDIAN id: 6 row: -1 col: -1 current HP: -1 max HP: 400
+
+number of action sets of ally: 1
+number of action sets of enemy: 256
+
+
+
+maxScore: -36.0
+elapsed time: 79
+
+
+----------------      moveTurn: 5 phase: 0      ----------------
+
+
+elapsed time: 3
+
+
+----------------      moveTurn: 5 phase: 1      ----------------
+
+
+elapsed time: 5
+
+
+----------------      moveTurn: 5 phase: 2      ----------------
+
+
+elapsed time: 13
+
+
+----------------      moveTurn: 5 phase: 3      ----------------
+
+
+elapsed time: 5
+
+
+----------------      moveTurn: 5 phase: 4      ----------------
+
+
+elapsed time: 4
+
+
+----------------      moveTurn: 5 phase: 5      ----------------
+
+
+elapsed time: 4
+
+
+----------------      actionTurn: 5      ----------------
+
+
+remaining AP of us: 0
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=400, remRespawnTime=0, currentCell={7, 12}, recentPath=[{7, 12}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={2, 12}, recentPath=[{2, 12}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={3, 19}, recentPath=[{3, 19}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=400, remRespawnTime=0, currentCell={7, 17}, recentPath=[{7, 17}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 7 col: 12 current HP: 400 max HP: 400
+hero: HEALER id: 3 row: 2 col: 12 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 3 col: 19 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 7 col: 17 current HP: 400 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 0 row: -1 col: -1 current HP: -1 max HP: 400
+hero: HEALER id: 2 row: -1 col: -1 current HP: -1 max HP: 200
+hero: HEALER id: 4 row: -1 col: -1 current HP: -1 max HP: 200
+hero: GUARDIAN id: 6 row: -1 col: -1 current HP: -1 max HP: 400
+
+number of action sets of ally: 1
+number of action sets of enemy: 256
+
+
+
+maxScore: -36.0
+elapsed time: 19
+
+
+----------------      moveTurn: 6 phase: 0      ----------------
+
+
+elapsed time: 2
+
+
+-----------
+
+----------------      moveTurn: 6 phase: 1      ----------------
+
+
+elap
+
+----------------      moveTurn: 6 phase: 2      ----------------
+
+
+elapsed time: 3
+
+
+----------------      moveTurn: 6 phase: 3      ----------------
+
+
+elapsed time: 1
+
+
+-----------
+
+----------------      moveTurn: 6 phase: 4      ----------------
+
+
+elap
+
+----------------      moveTurn: 6 phase: 5      ----------------
+
+
+elapsed time: 2
+
+
+----------------      actionTurn: 6      ----------------
+
+
+remaining AP of us: 0
+remaining AP of enemy: 60
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=400, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={6, 11}, recentPath=[{6, 11}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={7, 19}, recentPath=[{7, 19}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=400, remRespawnTime=0, currentCell={11, 17}, recentPath=[{11, 17}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 10 col: 13 current HP: 400 max HP: 400
+hero: HEALER id: 3 row: 6 col: 11 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 7 col: 19 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 11 col: 17 current HP: 400 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 0 row: 19 col: 13 current HP: 400 max HP: 400
+hero: HEALER id: 2 row: -1 col: -1 current HP: -1 max HP: 200
+hero: HEALER id: 4 row: -1 col: -1 current HP: -1 max HP: 200
+hero: GUARDIAN id: 6 row: 23 col: 13 current HP: 400 max HP: 400
+
+number of action sets of ally: 1
+number of action sets of enemy: 125
+
+
+
+maxScore: -36.0
+
+
+maxScore: -36.0
+
+----------------      moveTurn: 7 phase: 0      ----------------
+
+
+elapsed time: 8
+
+
+----------------      moveTurn: 7 phase: 1      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 7 phase: 2      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 7 phase: 3      ----------------
+
+
+elapsed time: 2
+
+
+----------------      moveTurn: 7 phase: 4      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 7 phase: 5      ----------------
+
+
+elapsed time: 2
+
+
+----------------      actionTurn: 7      ----------------
+
+
+remaining AP of us: 0
+remaining AP of enemy: 12
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=400, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={9, 13}, recentPath=[{9, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={9, 17}, recentPath=[{9, 17}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=400, remRespawnTime=0, currentCell={15, 17}, recentPath=[{15, 17}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 400 max HP: 400
+hero: HEALER id: 3 row: 9 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 9 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 15 col: 17 current HP: 400 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 0 row: 14 col: 13 current HP: 400 max HP: 400
+hero: HEALER id: 2 row: 20 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 4 row: -1 col: -1 current HP: -1 max HP: 200
+hero: GUARDIAN id: 6 row: 19 col: 13 current HP: 400 max HP: 400
+
+number of action sets of ally: 1
+number of action sets of enemy: 1
+
+
+
+maxScore: 0.0
+elapsed time: 6
+
+
+----------------      moveTurn: 8 phase: 0      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 8 phase: 1      ----------------
+
+
+elapsed time: 1
+
+
+----------------     
+
+----------------      moveTurn: 8 phase: 2      --------------
+
+----------------      moveTurn: 8 phase: 3      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 8 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 8 phase: 5      ----------------
+
+
+elapsed time: 1
+
+
+----------------      actionTurn: 8      ----------------
+
+
+remaining AP of us: 48
+remaining AP of enemy: 40
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=400, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={13, 17}, recentPath=[{13, 17}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=400, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 400 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 400 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 0 row: 14 col: 13 current HP: 400 max HP: 400
+hero: HEALER id: 2 row: 18 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 4 row: 19 col: 13 current HP: 200 max HP: 200
+hero: GUARDIAN id: 6 row: 15 col: 13 current HP: 400 max HP: 400
+
+number of action sets of ally: 66
+number of action sets of enemy: 54
+
+
+
+maxScore: 231.0
+her
+
+
+maxScore: 206.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 791
+
+
+----------------      moveTurn: 9 phase:
+
+----------------      moveTurn: 9 phase: 0      ----------------
+
+
+my AbilityName: GUARD
+
+----------------      moveTurn: 9 phase:
+
+----------------      moveTurn: 9 phase: 1 
+
+----------------      moveTurn: 9 phase:
+
+----------------      moveTurn: 9 phase: 2 
+
+----------------      moveTurn: 9 phase:
+
+----------------      moveelapsed time: 0
+
+
+----------------      moveTurn: 9 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 9 phase:
+
+----------------      moveTurn: 9 phase: 5 
+
+----------------      actionTurn: 9     
+
+----------------      actionTurn: 9      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={13, 17}, recentPath=[{13, 17}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 0 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 2 row: 18 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 4 row: 19 col: 13 current HP: 200 max HP: 200
+hero: GUARDIAN id: 6 row: 15 col: 13 current HP: 360 max HP: 400
+
+number of action sets of ally: 
+
+----------------      moveTurn: 10 phase: 0      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 10 phase: 1      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 10 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 10 phase: 3      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 10 phase: 4      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 10 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 10      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HE
+
+----------------      actionTurn: 10      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={13, 17}, recentPath=[{13, 17}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP: 400
+
+position & HP
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 750
+
+
+----------------      moveTurn: 11 phase: 0      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 11 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 11 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 11 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 11 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 11 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 11      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={18, 13}, recentPath=[{18, 13}]}
+Hero{id=4, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={19, 13}, recentPath=[{19, 13}]}
+Hero{id=6, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={15, 13}, recentPath=[{15, 13}]}
+
+state of enemy heroes:
+hero: 1
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 3
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 5
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 7
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 0 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 2 row: 18 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 4 row: 19 col: 13 current HP: 200 max HP: 200
+hero: GUARDIAN id: 6 row: 15 col: 13 current HP: 360 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP: 400
+
+number of action sets of ally: 256
+number of action sets of enemy: 256
+
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 551
+
+
+----------------      moveTurn: 12 phase: 0      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 12 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 12 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 12 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 12 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 12 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 12      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={18, 13}, recentPath=[{18, 13}]}
+Hero{id=4, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={19, 13}, recentPath=[{19, 13}]}
+Hero{id=6, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={15, 13}, recentPath=[{15, 13}]}
+
+state of enemy heroes:
+hero: 1
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 3
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 5
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 7
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 0 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 2 row: 18 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 4 row: 19 col: 13 current HP: 200 max HP: 200
+hero: GUARDIAN id: 6 row: 15 col: 13 current HP: 360 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP: 400
+
+number of action sets of ally: 256
+number of action sets of enemy: 256
+
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 517
+
+
+----------------      moveTurn: 13 phase: 0      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 13 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 13 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 13 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 13 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 13 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 13      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, 
+
+----------------      actionTurn: 13      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={13, 17}, recentPath=[{13, 17}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP: 400
+
+positio
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 741
+
+
+----------------      moveTurn: 14 phase: 0      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 14 phase: 1      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 14 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 14 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 14 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 14 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 14      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={18, 13}, recentPath=[{18, 13}]}
+Hero{id=4, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={19, 13}, recentPath=[{19, 13}]}
+Hero{id=6, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={15, 13}, recentPath=[{15, 13}]}
+
+state of enemy heroes:
+hero: 1
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 3
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 5
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 7
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 0 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 2 row: 18 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 4 row: 19 col: 13 current HP: 200 max HP: 200
+hero: GUARDIAN id: 6 row: 15 col: 13 current HP: 360 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP: 400
+
+number of action sets of ally: 256
+number of action sets of enemy: 256
+
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 546
+
+
+----------------      moveTurn: 15 phase: 0      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 15 phase: 1      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 15 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 15 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 15 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 15 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 15      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abil
+
+----------------      actionTurn: 15      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={13, 17}, recentPath=[{13, 17}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP: 400
+
+pos
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 560
+
+
+----------------      moveTurn: 16 phase: 0      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 16 phase: 1      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 16 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 16 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 16 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 16 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 16      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], cremaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+He
+state of enemy heroes:
+hero: 1
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 3
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 5
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 7
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 0 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 2 row: 18 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 4 row: 19 col: 13 current HP: 200 max HP: 200
+hero: GUARDIAN id: 6 row: 15 col: 13 current HP: 360 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP: 400
+
+number of action sets of ally: 256
+number of action sets of enemy: 256
+
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 358
+
+
+----------------      moveTurn: 17 phase: 0      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 17 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 17 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 17 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 17 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 17 phase: 5      ----------------
+
+
+elapsed time: 2
+
+
+----------------      actionTurn: 17      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilitie
+
+----------------      actionTurn: 17      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={13, 17}, recentPath=[{13, 17}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP: 400
+
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 371
+
+
+----------------      moveTurn: 18 phase: 0      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 18 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 18 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 18 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 18 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 18 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 18      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=
+
+----------------      actionTurn: 18      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={13, 17}, recentPath=[{13, 17}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP: 400
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 320
+
+
+----------------      moveTurn: 19 phase: 0      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 19 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 19 phase: 2      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 19 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 19 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 19 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 19      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{
+
+----------------      actionTurn: 19      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={13, 17}, recentPath=[{13, 17}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP: 4
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 579
+
+
+----------------      moveTurn: 20 phase: 0      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 20 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 20 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 20 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 20 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 20 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 20      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{HE
+
+----------------      actionTurn: 20      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={13, 17}, recentPath=[{13, 17}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP:
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 580
+
+
+----------------      moveTurn: 21 phase: 0      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 21 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 21 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 21 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 21 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 21 phase: 5      ----------------
+
+
+elapsed time: 1
+
+
+----------------      actionTurn: 21      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={18, 13}, recentPath=[{18, 13}]}
+Hero{id=4, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={19, 13}, recentPath=[{19, 13}]}
+Hero{id=6, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={15, 13}, recentPath=[{15, 13}]}
+
+state of enemy heroes:
+hero: 1
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 3
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 5
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 7
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 0 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 2 row: 18 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 4 row: 19 col: 13 current HP: 200 max HP: 200
+hero: GUARDIAN id: 6 row: 15 col: 13 current HP: 360 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max HP: 400
+
+number of action sets of ally: 256
+number of action sets of enemy: 256
+
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 433
+
+
+----------------      moveTurn: 22 phase: 0      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 22 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 22 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 22 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 22 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 22 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 22      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER
+
+----------------      actionTurn: 22      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={13, 17}, recentPath=[{13, 17}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 max
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 335
+
+
+----------------      moveTurn: 23 phase: 0      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 23 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 23 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 23 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 23 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 23 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 23      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER_A
+
+----------------      actionTurn: 23      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={13, 17}, recentPath=[{13, 17}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=360, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: 0
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 360 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 13 col: 17 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 360 m
+
+
+maxScore: 233.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 307
+
+
+----------------      moveTurn: 24 phase: 0      ----------------
+
+
+my AbilityName: HEALER_HEAL caster id: 2
+my AbilityName: HEALER_DODGE caster id: 4
+my AbilityName: GUARDIAN_ATTACK caster id: 0
+my AbilityName: GUARDIAN_ATTACK caster id: 6
+elapsed time: 1
+
+
+----------------      moveTurn: 24 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 24 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 24 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 24 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 24 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 24      ----------------
+
+
+remaining AP of us: 92
+remaining AP of enemy: 92
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=255, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER_ATTACK,
+
+----------------      actionTurn: 24      ----------------
+
+
+remaining AP of us: 92
+remaining AP of enemy: 92
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=280, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 4}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={14, 18}, recentPath=[{14, 18}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=280, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 1
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 4
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 280 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 14 col: 18 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 current HP: 28
+
+
+maxScore: 158.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 4 ability: HEALER_ATTACK cell: row: 14 col: 14
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 370
+
+
+----------------      moveTurn: 25 phase: 0      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 25 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 25 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 25 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 25 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 25 phase: 5      ----------------
+
+
+elapsed time: 1
+
+
+----------------      actionTurn: 25      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=255, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEAL
+
+----------------      actionTurn: 25      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=280, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 3}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={14, 18}, recentPath=[{14, 18}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=280, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 3
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 280 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 14 col: 18 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14 col: 14 curr
+
+
+maxScore: 208.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_ATTACK cell: row: 14 col: 14
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 177
+
+
+----------------      moveTurn: 26 phase: 0      ----------------
+
+
+my AbilityName: HEALER_HEAL caster id: 2
+my AbilityName: GUARDIAN_ATTACK caster id: 0
+my AbilityName: HEALER_ATTACK caster id: 4
+my AbilityName: GUARDIAN_ATTACK caster id: 6
+elapsed time: 1
+
+
+----------------      moveTurn: 26 phase: 1      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 26 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 26 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 26 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 26 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 26      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 84
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=175, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, 
+
+----------------      actionTurn: 26      ----------------
+
+
+remaining AP of us: 84
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=200, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 4}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 2}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={14, 18}, recentPath=[{14, 18}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=175, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: 0
+  ability: HEALER_HEAL coolDown: 1
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 2
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 200 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 14 col: 18 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: 14
+
+
+maxScore: 198.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 4 ability: HEALER_HEAL cell: row: 16 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 113
+
+
+----------------      moveTurn: 27 phase: 0      ----------------
+
+
+my AbilityName: HEALER_HEAL caster id: 4
+my AbilityName: GUARDIAN_ATTACK caster id: 0
+my AbilityName: HEALER_ATTACK caster id: 2
+my AbilityName: GUARDIAN_ATTACK caster id: 6
+elapsed time: 0
+
+
+----------------      moveTurn: 27 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 27 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 27 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 27 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 27 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 27      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=70, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {H
+
+----------------      actionTurn: 27      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=95, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 3}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 1}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={14, 18}, recentPath=[{14, 18}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=95, remRespawnTime=0, currentCell={14, 14}, recentPath=[{14, 14}]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 1
+  ability: HEALER_DODGE coolDown: 1
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 95 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 14 col: 18 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row
+
+
+maxScore: 208.0
+hero: GUARDIAN id: 0 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+hero: HEALER id: 2 ability: HEALER_HEAL cell: row: 15 col: 13
+hero: HEALER id: 4 ability: HEALER_ATTACK cell: row: 14 col: 14
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 70
+
+
+----------------      moveTurn: 28 phase: 0      ----------------
+
+
+my AbilityName: HEALER_HEAL caster id: 2
+my AbilityName: GUARDIAN_ATTACK caster id: 0
+my AbilityName: HEALER_ATTACK caster id: 4
+my AbilityName: GUARDIAN_ATTACK caster id: 6
+elapsed time: 1
+
+
+----------------      moveTurn: 28 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 28 phase: 2      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 28 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 28 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 28 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 28      ----------------
+
+
+remaining AP of us: 96
+remaining AP of enemy: 80
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}, {GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=0, remRespawnTime=4, currentCell={-1, -1}, recentPath=[]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 
+
+----------------      actionTurn: 28      ----------------
+
+
+remaining AP of us: 76
+remaining AP of enemy: 96
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=15, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 2}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}, {HEALER_DODGE, 0}{HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={12, 14}, recentPath=[{12, 15}, {12, 14}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}, {GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=0, remRespawnTime=4, currentCell={-1, -1}, recentPath=[]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 1
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 15 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 12 col: 14 current HP: 200 max HP: 200
+hero: GUA
+
+
+maxScore: 122.0
+hero: HEALER id: 2 ability: HEALER_DODGE cell: row: 18 col: 18
+hero: HEALER id: 4 ability: HEALER_HEAL cell: row: 16 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 665
+
+
+----------------      moveTurn: 29 phase: 0      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 29 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 29 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 29 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 29 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 29 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 29      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}, {GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=0, remRespawnTime=3, currentCell={-1, -1}, recentPath=[]}
+Hero{id=2, heroName=HEALER, abi
+
+----------------      actionTurn: 29      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=15, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 1}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={12, 14}, recentPath=[{12, 14}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}, {GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=0, remRespawnTime=3, currentCell={-1, -1}, recentPath=[]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 4
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 15 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 12 col: 14 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: -1 col: -1 current HP: 0 max HP: 400
+
+position & 
+
+
+maxScore: 122.0
+hero: HEALER id: 2 ability: HEALER_DODGE cell: row: 18 col: 18
+hero: HEALER id: 4 ability: HEALER_HEAL cell: row: 16 col: 16
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 155
+
+
+----------------      moveTurn: 30 phase: 0      ----------------
+
+
+my AbilityName: HEALER_HEAL caster id: 4
+my AbilityName: HEALER_DODGE caster id: 2
+my AbilityName: GUARDIAN_ATTACK caster id: 6
+elapsed time: 1
+
+
+----------------      moveTurn: 30 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 30 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 30 phase: 3      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 30 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 30 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 30      ----------------
+
+
+remaining AP of us: 84
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}, {GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY
+
+----------------      actionTurn: 30      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 84
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=5, remRespawnTime=0, currentCell={14, 13}, recentPath=[{14, 13}]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={10, 13}, recentPath=[{10, 13}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 1}, ], currentHP=200, remRespawnTime=0, currentCell={12, 14}, recentPath=[{12, 14}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}, {GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=0, remRespawnTime=2, currentCell={-1, -1}, recentPath=[]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 4
+hero: 4
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: 14 col: 13 current HP: 5 max HP: 400
+hero: HEALER id: 3 row: 10 col: 13 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 12 col: 14 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: -1 col: -1 current HP: 0 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 0 row: -1 col: -1 current HP: 0 max HP: 400
+hero: HEALER id: 2 row: 18 c
+
+
+maxScore: 47.0
+hero: HEALER id: 4 ability: HEALER_DODGE cell: row: 18 col: 18
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 14 col: 13
+elapsed time: 160
+
+
+----------------      moveTurn: 31 phase: 0      ----------------
+
+
+my AbilityName: HEALER_DODGE caster id: 4
+my AbilityName: GUARDIAN_ATTACK caster id: 6
+elapsed time: 1
+
+
+----------------      moveTurn: 31 phase: 1      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 31 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 31 phase: 3      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 31 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 31 phase: 5      ----------------
+
+
+elapsed time: 0
+
+
+----------------      actionTurn: 31      ----------------
+
+
+remaining AP of us: 52
+remaining AP of enemy: 100
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}, {GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=0, remRespawnTime=1, currentCell={-1, -1}, recentPath=[]}
+Hero{id=2, heroName=HEALER, a
+
+----------------      actionTurn: 31      ----------------
+
+
+remaining AP of us: 100
+remaining AP of enemy: 56
+
+state of our heroes:
+Hero{id=1, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}, {GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=0, remRespawnTime=4, currentCell={-1, -1}, recentPath=[]}
+Hero{id=3, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 4}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={12, 15}, recentPath=[{12, 15}]}
+Hero{id=5, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 0}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={12, 14}, recentPath=[{12, 14}]}
+Hero{id=7, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}, {GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=0, remRespawnTime=1, currentCell={-1, -1}, recentPath=[]}
+
+state of enemy heroes:
+hero: 0
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 2
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 3
+hero: 4
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 0
+hero: 6
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+
+position & HP of allies: 
+hero: GUARDIAN id: 1 row: -1 col: -1 current HP: 0 max HP: 400
+hero: HEALER id: 3 row: 12 col: 15 current HP: 200 max HP: 200
+hero: HEALER id: 5 row: 12 col: 14 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: -1 col: -1 current HP: 0 max HP: 400
+
+position & HP of enemies: 
+
+
+
+maxScore: 189.0
+hero: HEALER id: 4 ability: HEALER_HEAL cell: row: 12 col: 18
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 12 col: 14
+elapsed time: 43
+
+
+----------------      moveTurn: 32 phase: 0      ----------------
+
+
+my AbilityName: HEALER_HEAL caster id: 4
+my AbilityName: GUARDIAN_ATTACK caster id: 6
+elapsed time: 2
+
+
+----------------      moveTurn: 32 phase: 1      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 32 phase: 2      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 32 phase: 3      ----------------
+
+
+elapsed time: 1
+
+
+----------------      moveTurn: 32 phase: 4      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 32 phase: 5      ----------------
+
+
+elapsed time: 1
+
+
+----------------      actionTurn: 32      ----------------
+
+
+remaining AP of us: 56
+remaining AP of enemy: 84
+
+state of our heroes:
+Hero{id=0, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=400, remRespawnTime=0, currentCell={28, 12}, recentPath=[{28, 12}]}
+Hero{id=2, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 2}, {HEALER_HEAL, 0}, ], currentHP=200, remRespawnTime=0, currentCell={18, 14}, recentPath=[{18, 14}]}
+Hero{id=4, heroName=HEALER, abilities=[{HEALER_ATTACK, 0}{HEALER_DODGE, 3}, {HEALER_HEAL, 1}, ], currentHP=175, remRespawnTime=0, currentCell={12, 17}, recentPath=[{12, 17}]}
+Hero{id=6, heroName=GUARDIAN, abilities=[{GUARDIAN_ATTACK, 0}{GUARDIAN_DODGE, 0}, {GUARDIAN_FORTIFY, 0}, ], currentHP=25, remRespawnTime=0, currentCell={12, 14}, recentPath=[{12, 14}]}
+
+state of enemy heroes:
+hero: 1
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+hero: 3
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 3
+hero: 5
+  ability: HEALER_ATTACK coolDown: -1
+  ability: HEALER_HEAL coolDown: 0
+  ability: HEALER_DODGE coolDown: 4
+hero: 7
+  ability: GUARDIAN_FORTIFY coolDown: 0
+  ability: GUARDIAN_DODGE coolDown: 0
+  ability: GUARDIAN_ATTACK coolDown: -1
+
+position & HP of allies: 
+hero: GUARDIAN id: 0 row: 28 col: 12 current HP: 400 max HP: 400
+hero: HEALER id: 2 row: 18 col: 14 current HP: 200 max HP: 200
+hero: HEALER id: 4 row: 12 col: 17 current HP: 175 max HP: 200
+hero: GUARDIAN id: 6 row: 12 col: 14 current HP: 25 max HP: 400
+
+position & HP of enemies: 
+hero: GUARDIAN id: 1 row: -1 col: -1 current HP: 0 max HP: 400
+hero: HEALER id: 3 row: 12 col: 14 current HP: 160 max HP: 200
+hero: HEALER id: 5 row: 12 col: 13 current HP: 200 max HP: 200
+hero: GUARDIAN id: 7 row: -1 col: -1 current HP: -1 max HP: 400
+
+number of action sets of ally: 66
+number of action sets of enemy: 144
+
+
+
+maxScore: 191.0
+hero: HEALER id: 4 ability: HEALER_ATTACK cell: row: 12 col: 14
+hero: GUARDIAN id: 6 ability: GUARDIAN_ATTACK cell: row: 12 col: 13
+elapsed time: 78
+
+
+----------------      moveTurn: 33 phase: 0      ----------------
+
+
+elapsed time: 0
+
+
+----------------      moveTurn: 33 phase: 1      ----------------
+
+
+elapsed time: 0
